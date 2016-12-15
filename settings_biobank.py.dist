@@ -1,0 +1,22 @@
+#   $Id: settings_biobank.py.dist 5225 2016-12-15 19:41:35Z levinm08 $
+"""Settings used by the import_biobank.py script.
+"""
+DB_CONNECT_STRING = {
+    'user'          :'',
+    'passwd'        :'',
+    'host'          :'',
+    'port'          : 3306
+}
+
+DB_CONFIG = {
+    'BIOBANK_DB'    :'',
+    'REPORT_DB'     :'',
+}
+
+
+# Avoid magic numbers below by declaring this constant
+# this limits us to cases done at main hospital
+DB_CONFIG['COMPURECORD_SITEID_MSH'] = ''
+
+# log location
+LOG = ''
