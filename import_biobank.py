@@ -16,11 +16,7 @@ import time
 import logging
 from logging.handlers import RotatingFileHandler
 import MySQLdb as mysql
-import settings_biobank
-
-
-# Database config
-# TODO: put into settings.py.dist file?
+import settings_biobank     # db connect string and other site-specific settings
 
 def main():
     formatter = logging.Formatter(fmt='%(asctime)s: %(levelname)s: %(message)s')
